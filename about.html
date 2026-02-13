@@ -4,106 +4,131 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Royal Cuisine</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="text-light" style="background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
 
-<!-- Overlay for readability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html{
+  scroll-behavior:smooth;
+}
+</style>
+
+</head>
+
+<body class="text-light" 
+style="background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80') center/cover fixed;">
+
 <div class="bg-dark bg-opacity-75 min-vh-100">
 
-  <!-- Logo -->
-  <div class="container text-center  py-4">
-    <img src="https://thoughtless-sapphire-wqy3wbbfdl.edgeone.app/file_00000000b01c71fa8fbe6997e791edca.png"
-         class="img-fluid" style="max-height:100px;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black bg-opacity-75 fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-warning" href="#">Royal Cuisine</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#food">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hospitality">Hospitality</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ingredients">Ingredients</a></li>
+        <li class="nav-item"><a class="nav-link" href="#promise">Promise</a></li>
+        <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
 
-  <div class="container py-5">
-
-    <!-- OUR FOOD -->
-    <div class="row align-items-center mb-5">
-      <div class="col-12 col-md-4 mb-3">
-        <h4 class="fw-bold">Our Food</h4>
-        <p class="fs-5">
-          Our food is made with authentic spices and
-                fresh,high-quality ingredients.
-           Each dish is carefully crafted to deliver 
-                 bold and balanced flavors.
-            We focus on consistency, quality, 
-              and great taste in every meal.
-        </p>
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <img src="https://alright-scarlet-jv2etrhsrb.edgeone.app/dining_carnival-cruise-line_carnival-breeze_18971.jpg"
-            style="height:277px" class="img-fluid rounded shadow">
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <img src="https://spicy-yellow-vitusqigpf.edgeone.app/d5.jpg"
-             style="height:277px" class="img-fluid rounded shadow">
-      </div>
-    </div>
-
-    <!-- HOSPITALITY -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
-      <div class="col-12 col-md-4 mb-3">
-        <h4 class="fw-bold">Our Hospitality</h4>
-        <p class="fs-5">
-          We believe great food deserves warm and thoughtful service. Our team is dedicated to making every guest feel welcome and comfortable. From the moment you arrive, we focus on care, quality, and attention to detail. Every guest experience is treated with elegance and professionalism.
-        </p>
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <img src="https://promising-crimson-r2scwabxbq.edgeone.app/VdQ9YmnQS1AyX5VubQqsbv06nUlKJ1rurXq0QOT0.jpg"
-         style="height:277px" class="img-fluid rounded shadow">
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <img src="https://inner-apricot-bmrzkdzayp.edgeone.app/LBLFP4LETHOKZDOGO63W7TQIDA.jpg"
-           style="height:277px"  class="img-fluid rounded shadow">
-      </div>
-    </div>
-
-    <!-- INGREDIENTS -->
-    <div class="row mb-5">
-      <div class="col-12">
-        <h4 class="fw-bold text-center fs-4">Our Ingredients</h4>
-        <pre class="text-center fs-5">
-          We use fresh, high-quality ingredients sourced with care. 
-          Every spice and produce item is selected to ensure purity and flavor. 
-          We believe great taste starts with the right ingredients.
-        </pre>
-      </div>
-    </div>
-
-    <!-- PROMISE -->
-    <div class="row mb-5">
-      <div class="col-12">
-        <h4 class="fw-bold text-center fs-4">Our Promise</h4>
-        <pre  class="text-center fs-5" >
-          We promise to serve food made with authentic spices and quality ingredients. 
-          We commit to maintaining freshness, hygiene, and consistency every day. 
-          Every dish is prepared with care to deliver great taste and balance.
-           Our service is respectful, attentive, and focused on creating a memorable dining experience.
-            We continually improve to ensure every guest leaves satisfied.
-        </pre>
-      </div>
-    </div>
-
-    <!-- STORY -->
-    <div class="row mb-5">
-      <div class="col-12">
-        <h4 class="fw-bold text-center fs-4 ">Our Story</h4>
-        <pre class="text-center fs-5">
-          We believe real taste comes from original spices and quality ingredients.
-           Every dish reflects our passion for honest cooking and rich flavors.
-            We focus on consistency, freshness, and traditional taste with a modern touch.
-             Our journey is driven by the love for good food and happy customers.
-              Royal Cuisine is more than a restaurant; it's a celebration of culinary excellence.
-        </pre><br><br><br><br><br><br><br><br>
-        <h2 class="text-center text-light">*****</h2>
-      </div>
-    </div>
-
-  </div>
+<!-- Logo -->
+<div class="container text-center py-5 mt-5">
+  <img src="https://thoughtless-sapphire-wqy3wbbfdl.edgeone.app/file_00000000b01c71fa8fbe6997e791edca.png"
+       class="img-fluid" style="max-height:100px;">
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container">
+
+<!-- OUR FOOD -->
+<section id="food" class="py-5">
+<div class="row align-items-center g-4">
+  <div class="col-12 col-lg-4">
+    <h3 class="fw-bold text-warning">Our Food</h3>
+    <p class="fs-5">
+      Our food is prepared using authentic spices and premium ingredients.
+      Each dish reflects balance, quality, and unforgettable flavor.
+    </p>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <img src="https://alright-scarlet-jv2etrhsrb.edgeone.app/dining_carnival-cruise-line_carnival-breeze_18971.jpg"
+         class="img-fluid rounded shadow"
+         style="height:280px; width:100%; object-fit:cover;">
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <img src="https://spicy-yellow-vitusqigpf.edgeone.app/d5.jpg"
+         class="img-fluid rounded shadow"
+         style="height:280px; width:100%; object-fit:cover;">
+  </div>
+</div>
+</section>
+
+<!-- HOSPITALITY -->
+<section id="hospitality" class="py-5">
+<div class="row align-items-center g-4 flex-lg-row-reverse">
+  <div class="col-12 col-lg-4">
+    <h3 class="fw-bold text-warning">Our Hospitality</h3>
+    <p class="fs-5">
+      We believe refined service completes a great dining experience.
+      Every guest is welcomed with warmth, elegance, and professionalism.
+    </p>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <img src="https://promising-crimson-r2scwabxbq.edgeone.app/VdQ9YmnQS1AyX5VubQqsbv06nUlKJ1rurXq0QOT0.jpg"
+         class="img-fluid rounded shadow"
+         style="height:280px; width:100%; object-fit:cover;">
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <img src="https://inner-apricot-bmrzkdzayp.edgeone.app/LBLFP4LETHOKZDOGO63W7TQIDA.jpg"
+         class="img-fluid rounded shadow"
+         style="height:280px; width:100%; object-fit:cover;">
+  </div>
+</div>
+</section>
+
+<!-- INGREDIENTS -->
+<section id="ingredients" class="py-5 text-center">
+  <h3 class="fw-bold text-warning">Our Ingredients</h3>
+  <p class="fs-5 col-lg-8 mx-auto">
+    We use carefully selected, high-quality ingredients to ensure purity,
+    freshness, and exceptional taste in every dish.
+  </p>
+</section>
+
+<!-- PROMISE -->
+<section id="promise" class="py-5 text-center">
+  <h3 class="fw-bold text-warning">Our Promise</h3>
+  <p class="fs-5 col-lg-8 mx-auto">
+    We promise authentic flavors, premium quality, and impeccable hygiene.
+    Our mission is to deliver a memorable and luxurious dining experience.
+  </p>
+</section>
+
+<!-- STORY -->
+<section id="story" class="py-5 text-center">
+  <h3 class="fw-bold text-warning">Our Story</h3>
+  <p class="fs-5 col-lg-8 mx-auto">
+    Royal Cuisine was created from a passion for fine dining and rich flavors.
+    We blend tradition and elegance to celebrate culinary excellence.
+  </p>
+  <h2 class="text-warning mt-3">★★★★★</h2>
+</section>
+
+</div>
+
+</div>
+
 </body>
 </html>
