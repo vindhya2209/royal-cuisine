@@ -158,15 +158,28 @@
       </div>
 
       <div class="modal-body">
-        <form action="https://formsubmit.co/vindhyasunkara046@gmail.com" method="post">
-          <input type="text" class="form-control mb-3" placeholder="Your Name">
-          <input type="tel" class="form-control mb-3" placeholder="Phone Number">
-          <input type="number" class="form-control mb-3" placeholder="Guests">
-          <input type="date" class="form-control mb-3">
-          <input type="time" class="form-control mb-3">
-          <textarea class="form-control mb-3" rows="2" placeholder="Special Request"></textarea>
-          <button class="btn btn-dark w-100">Confirm Reservation</button>
-        </form>
+        <form action="https://formsubmit.co/vindhyasunkara046@gmail.com" method="POST">
+
+  <input type="text" name="Name" class="form-control mb-3" placeholder="Your Name" required>
+
+  <input type="tel" name="Phone" class="form-control mb-3" placeholder="Phone Number" required>
+
+  <input type="number" name="Guests" class="form-control mb-3" placeholder="Guests" required>
+
+  <input type="date" name="Date" class="form-control mb-3" required>
+
+  <input type="time" name="Time" class="form-control mb-3" required>
+
+  <textarea name="Special Request" class="form-control mb-3" rows="2" placeholder="Special Request"></textarea>
+
+  <!-- Hidden Settings -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Table Booking - Royal Cuisine">
+
+  <button type="submit" class="btn btn-dark w-100">Confirm Reservation</button>
+
+</form>
+
       </div>
 
     </div>
@@ -179,3 +192,4 @@
 </body>
 
 </html>
+
